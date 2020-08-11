@@ -1,0 +1,72 @@
+@font-face{
+    font-family: poppins;
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+   
+
+    nav .navbar{
+        box-shadow: 0px 2px 17px rgb(124, 124, 124);
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.884);
+        .nav-brand{
+            padding:.3rem;
+            img{
+                width: 224px;
+                height: 50px;
+            
+            }
+        }
+       
+        .toggle-collapse{
+            display: none;
+            padding-top: 8px;
+            position: absolute;
+            right: 2rem;
+            align-self: center;
+            .toggle-icon{
+                font-size: 1.6rem;
+
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-self: center;
+            padding-right: 2rem;
+            li{
+                padding-right: 2rem;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    font-size: 0.9rem;
+                    font-family: poppins;
+                }
+            }
+        }
+        @media (max-width:768px){
+            flex-direction: column;
+            ul{
+                display: none;
+                flex-direction: column;
+                li{
+                    padding: 1rem 0;
+
+                }
+            }
+            .toggle-collapse{
+               top:.95rem;
+                display: flex;
+            }
+        }
+    }
+}
