@@ -1,0 +1,60 @@
+header{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('/assets/img/logo.jpg');
+        background-position: top;
+        height: 70px;
+        overflow: hidden;
+        .nav-brand{
+            img{
+                width:233px;
+                height: 66px;
+            }
+        }
+        .toggle-collapse{
+            display: none;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.3rem;
+            border: 1px solid #d1d1d1a2; 
+            border-radius: 7px; 
+            padding: 5px 8px;          
+            .toggle-icon{
+                font-size: 1.5rem;
+            }
+        }
+        .navbar-nav{
+            
+            .nav-item{
+                display: flex;
+                padding-right: 2rem;
+                .nav-link{
+                    line-height: 70px;
+                    a{
+                        color: #000000;
+                        display: inline-block;
+                        width: 100%;
+                        padding:0 1.5rem;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+}
+@media (max-width:912px){
+    header{
+        nav{
+            .toggle-collapse{
+                display: flex;
+            }
+            .navbar-nav{
+                display: none;
+            }
+        }
+    }
+}

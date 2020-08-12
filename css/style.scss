@@ -1,92 +1,15 @@
-@font-face{
-    font-family: poppins;
-    src: url('../assets/fonts/Poppins-Regular.ttf');
-}
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header{
-   
-    
-   
-
-    .navbar{
-        box-shadow: 0px 2px 17px rgb(124, 124, 124);
-        display: flex;
-        justify-content: space-between;
-        background-image: linear-gradient(top,rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../assets/img/logo.jpg') ;
-        height: 0;
-        min-height: 56px;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-      
-        .nav-brand{
-            padding:.3rem;
-            img{
-                width: 224px;
-                height: 50px;
-            
-            }
-        }
-       
-        .toggle-collapse{
-            display: none;
-            padding-top: 8px;
-            position: absolute;
-            right: 2rem;
-            align-self: center;
-            .toggle-icon{
-                font-size: 1.6rem;
-
-            }
-        }
-        ul{
-            list-style: none;
-            display: flex;
-            align-self: center;
-            padding-right: 2rem;
-            li{
-                padding-right: 2rem;
-                text-align: center;
-                a{
-                    text-decoration: none;
-                    color: #000000;
-                    font-size: 0.9rem;
-                    font-family: poppins;
-                }
-            }
-        }
-        
-        
-        @media (max-width:768px){
-            flex-direction: column;
-            .nav-brand{
-                align-self: flex-start;
-            }
-            
-            ul{
-               
-                flex-direction: column;
-                li{
-                    padding: 1rem 0;
-
-                }
-            }
-            .toggle-collapse{
-               top:.95rem;
-                display: flex;
-            }
-        }
-    }
-    .bg-header{
-        max-width: 100%;
-        height: auto;
-    }
-    .navbar.nav-collapse{
-        height: 17rem;
-    }
-   
+ul{
+    list-style: none;
 }
+a{
+    text-decoration: none;
+}
+@import './header';
