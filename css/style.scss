@@ -9,14 +9,19 @@
     box-sizing: border-box;
 }
 header{
+   
     
    
 
-    nav .navbar{
+    .navbar{
         box-shadow: 0px 2px 17px rgb(124, 124, 124);
         display: flex;
         justify-content: space-between;
-        background-color: rgba(255, 255, 255, 0.884);
+        background-image: linear-gradient(top,rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../assets/img/logo.jpg') ;
+        height: 0;
+        min-height: 56px;
+        transition: all 0.5s ease-in-out;
+      
         .nav-brand{
             padding:.3rem;
             img{
@@ -53,10 +58,14 @@ header{
                 }
             }
         }
+        
+        
         @media (max-width:768px){
             flex-direction: column;
+            
+            
             ul{
-                display: none;
+               
                 flex-direction: column;
                 li{
                     padding: 1rem 0;
@@ -69,4 +78,12 @@ header{
             }
         }
     }
+    .bg-header{
+        max-width: 100%;
+        height: auto;
+    }
+    .navbar.nav-collapse{
+        height: 100%;
+    }
+   
 }

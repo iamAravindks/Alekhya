@@ -10,7 +10,7 @@
           box-sizing: border-box;
 }
 
-header nav .navbar {
+header .navbar {
   -webkit-box-shadow: 0px 2px 17px #7c7c7c;
           box-shadow: 0px 2px 17px #7c7c7c;
   display: -webkit-box;
@@ -19,19 +19,24 @@ header nav .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.884);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url("../assets/img/logo.jpg");
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../assets/img/logo.jpg");
+  height: 0;
+  min-height: 56px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-header nav .navbar .nav-brand {
+header .navbar .nav-brand {
   padding: .3rem;
 }
 
-header nav .navbar .nav-brand img {
+header .navbar .nav-brand img {
   width: 224px;
   height: 50px;
 }
 
-header nav .navbar .toggle-collapse {
+header .navbar .toggle-collapse {
   display: none;
   padding-top: 8px;
   position: absolute;
@@ -41,11 +46,11 @@ header nav .navbar .toggle-collapse {
       align-self: center;
 }
 
-header nav .navbar .toggle-collapse .toggle-icon {
+header .navbar .toggle-collapse .toggle-icon {
   font-size: 1.6rem;
 }
 
-header nav .navbar ul {
+header .navbar ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,12 +60,12 @@ header nav .navbar ul {
   padding-right: 2rem;
 }
 
-header nav .navbar ul li {
+header .navbar ul li {
   padding-right: 2rem;
   text-align: center;
 }
 
-header nav .navbar ul li a {
+header .navbar ul li a {
   text-decoration: none;
   color: #000000;
   font-size: 0.9rem;
@@ -68,27 +73,35 @@ header nav .navbar ul li a {
 }
 
 @media (max-width: 768px) {
-  header nav .navbar {
+  header .navbar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header nav .navbar ul {
-    display: none;
+  header .navbar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header nav .navbar ul li {
+  header .navbar ul li {
     padding: 1rem 0;
   }
-  header nav .navbar .toggle-collapse {
+  header .navbar .toggle-collapse {
     top: .95rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+header .bg-header {
+  max-width: 100%;
+  height: auto;
+}
+
+header .navbar.nav-collapse {
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
