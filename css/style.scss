@@ -20,6 +20,7 @@ header{
         background-image: linear-gradient(top,rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('../assets/img/logo.jpg') ;
         height: 0;
         min-height: 56px;
+        overflow: hidden;
         transition: all 0.5s ease-in-out;
       
         .nav-brand{
@@ -62,7 +63,9 @@ header{
         
         @media (max-width:768px){
             flex-direction: column;
-            
+            .nav-brand{
+                align-self: flex-start;
+            }
             
             ul{
                
@@ -83,7 +86,7 @@ header{
         height: auto;
     }
     .navbar.nav-collapse{
-        height: 100%;
+        height: 17rem;
     }
    
 }
