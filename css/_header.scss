@@ -1,9 +1,13 @@
-header{
+
     .navbar{
         display: flex;
         justify-content: space-between;
         background-image: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('/assets/img/logo.jpg');
         background-position: top;
+        position: sticky;
+        top: 0;
+       
+        width: 100%;
         height: 70px;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
@@ -51,12 +55,19 @@ header{
     .navbar.nav-collapse{
         height: 350px;
     }
-    img{
-        max-width: 100%;
-    }
-}
+   
+   section{
+       .bg-site{
+           img{
+               max-width: 100%;
+           }
+       }
+   } 
+   
+
+
 @media (max-width:912px){
-    header{
+    
         .navbar{
            
            flex-direction: column;
@@ -82,5 +93,5 @@ header{
            
             
         }
-    }
+    
 }
