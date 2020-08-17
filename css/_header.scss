@@ -2,8 +2,8 @@
     .navbar{
         display: flex;
         justify-content: space-between;
-        background-image: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('/assets/img/logo.jpg');
-        background-position: top;
+        background-image: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)), url('/assets/img/bg-nav.jpg');
+        background-size: cover;
         position: sticky;
         top: 0;
        
@@ -24,6 +24,7 @@
             right: 1.3rem;
             border: 1px solid #d1d1d1a2; 
             border-radius: 7px; 
+            transition: all 0.5s ease-in-out;
             padding: 5px 8px;          
             .toggle-icon{
                 font-size: 1.5rem;
@@ -54,6 +55,19 @@
     }
     .navbar.nav-collapse{
         height: 350px;
+    }
+    .navbar.nav-scroll{
+        height: 60px;
+        background: #ffffff;
+        .nav-brand{
+            img{
+                height: 57px;
+            }
+            
+        }
+        .toggle-collapse{
+            top: 1.1rem;
+        }
     }
    
    section{

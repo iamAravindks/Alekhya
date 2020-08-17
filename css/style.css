@@ -21,9 +21,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url("/assets/img/logo.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("/assets/img/logo.jpg");
-  background-position: top;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.85))), url("/assets/img/bg-nav.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("/assets/img/bg-nav.jpg");
+  background-size: cover;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -46,6 +46,8 @@ a {
   right: 1.3rem;
   border: 1px solid #d1d1d1a2;
   border-radius: 7px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 5px 8px;
 }
 
@@ -81,6 +83,19 @@ a {
 
 .navbar.nav-collapse {
   height: 350px;
+}
+
+.navbar.nav-scroll {
+  height: 60px;
+  background: #ffffff;
+}
+
+.navbar.nav-scroll .nav-brand img {
+  height: 57px;
+}
+
+.navbar.nav-scroll .toggle-collapse {
+  top: 1.1rem;
 }
 
 section .bg-site img {
