@@ -262,19 +262,38 @@ section .bg-site img {
 
 @media (max-width: 580px) {
   .footer .footer-head {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
   }
   .footer .footer-head .footer-logo {
     width: 100%;
     margin-bottom: 2rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .footer .footer-head .footer-nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 45%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer .footer-head .footer-ser {
+    width: 45%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer .footer-head .footer-contact {
+    width: 100%;
+    margin-top: 1rem;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 /*# sourceMappingURL=style.css.map */
