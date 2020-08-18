@@ -8,7 +8,7 @@ toggleIcon.addEventListener('click', function(){
 bgSite = document.querySelector('.bg-site');
 bgTop = bgSite.offsetTop;
 window.addEventListener('scroll', function(){
-    if(window.scrollY>100){
+    if(window.scrollY>0){
         navbar.classList.add('nav-scroll');
     }
     else{
