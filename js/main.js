@@ -15,3 +15,6 @@ window.addEventListener('scroll', function(){
         navbar.classList.remove('nav-scroll');
     }
 })
+function navlink(){
+    navbar.classList.remove('nav-collapse');
+}

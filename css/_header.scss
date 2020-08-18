@@ -8,7 +8,7 @@
     top: 0;
     height: 70px;
     overflow: hidden;
-    transition: all .5s ease-in-out;
+    transition: all .4s ease-in-out;
     background-color: rgba(255,255,255,0.85);
     z-index: 1000;
     box-shadow: 0px 9px 16px #1b1a1a;
@@ -39,6 +39,7 @@
             display: flex;
             margin-right: 1rem;
             margin-top: 10px;
+            transition: all .5s ease-in-out;
             .nav-link{
                 padding: 0 2rem;
                 transition: all .5s ease-in-out;
@@ -59,6 +60,10 @@
 }
 .navbar.nav-collapse{
     height:290px !important;
+    .navbar-nav{
+        border-top: .01rem solid #c2c4b6;
+
+    }
 }
 .navbar.nav-scroll{
     height: 60px;
@@ -131,7 +136,7 @@ section{
         .navbar-nav{
             width: 100%;
             margin-top: 14px;
-            border-top: .01rem solid #c2c4b6;
+           
             .nav-item{
                 flex-direction: column;
                 margin: 10px 0 0 0;
