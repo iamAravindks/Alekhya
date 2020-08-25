@@ -247,6 +247,7 @@ section .bg-site img {
   }
   .aboutus .img {
     position: relative;
+    width: 100%;
   }
   .aboutus .img::before {
     content: '';
