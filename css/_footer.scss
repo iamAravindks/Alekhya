@@ -1,5 +1,5 @@
 .footer{
-    background-color: #000000;
+    background-color: #ebebeb;
     .footer-head{
         padding: 4rem 10px 2rem;
         display: flex;
@@ -17,11 +17,12 @@
                 margin: 0 auto;
                 img{
                     width: 100%;
+                   
                 }
                 
             }
             h4,h5{
-                color: rgb(180, 180, 180);
+                color: rgb(129, 129, 129);
                 margin-top: 5px;
             } 
     }  
@@ -31,13 +32,13 @@
         
         width: 20%;
         h3{
-            color: #ffffff;
+            color: rgb(129, 129, 129);
             margin-bottom: 15px;
         }
         .nav-item{
             .nav-link{
                 a{
-                    color:  rgba(148, 148, 148, 0.842);
+                    color:  rgb(129, 129, 129);
                 }
             }
         }
@@ -47,7 +48,7 @@
         flex-direction: column;
         
         width: 30%;
-        color: #ffffff;
+        color: rgb(129, 129, 129);
         h3{
             margin-bottom: 15px;
         }
@@ -60,7 +61,7 @@
             i{
                 padding-right: 8px;
                 font-size: 130%;
-                color: rgba(148, 148, 148, 0.842)
+                color: rgb(129, 129, 129)
                 ;
             }
         }
@@ -70,7 +71,7 @@
         
     }
     .footer-body{
-        color: rgba(148, 148, 148, 0.842);
+        color: rgb(129, 129, 129);
         width:80%;
         border-top: 1px solid #727272ee;
         margin:0 auto;
