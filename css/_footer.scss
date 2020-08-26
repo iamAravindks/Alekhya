@@ -1,5 +1,5 @@
 .footer{
-    background-color: #ebebeb;
+    background-color: #000000;
     .footer-head{
         padding: 4rem 10px 2rem;
         display: flex;
@@ -22,7 +22,7 @@
                 
             }
             h4,h5{
-                color: rgb(129, 129, 129);
+                color: rgb(255, 255, 255);
                 margin-top: 5px;
             } 
     }  
@@ -32,7 +32,7 @@
         
         width: 20%;
         h3{
-            color: rgb(129, 129, 129);
+            color: rgb(255, 255, 255);
             margin-bottom: 15px;
         }
         .nav-item{
@@ -48,7 +48,7 @@
         flex-direction: column;
         
         width: 30%;
-        color: rgb(129, 129, 129);
+        color: rgb(255, 255, 255);
         h3{
             margin-bottom: 15px;
         }

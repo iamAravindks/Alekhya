@@ -27,9 +27,13 @@
     .aboutus{p{
         padding-left: 0;
     }
+    h2{
+        margin-left: -17px;
+    }
         .img{
             position: relative;
             width: 100%;
+            border-radius: 2px;
         }
         .img::before{
             content: '';
@@ -46,11 +50,7 @@
             width: 100%;
             display: block;
             margin: 0;
-            
-            
-            
-
-        
+            border-radius: 6px;
         }
         
     }
