@@ -14,7 +14,13 @@ window.addEventListener('scroll', function(){
     else{
         navbar.classList.remove('nav-scroll');
     }
-})
+});
 function navlink(){
     navbar.classList.remove('nav-collapse');
 }
+
+var cateul = document.querySelector('.collapse-cate-nav');
+var ultoggler = document.querySelector('.ul-toggler');
+ultoggler.addEventListener('click',function(){
+    cateul.classList.toggle('activated');
+});
