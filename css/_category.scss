@@ -1,6 +1,7 @@
 .container{
     margin: 0 2rem 0 3rem;
     padding: 3rem 0;
+    border-bottom: 1px solid #5a5a5a
 }
 .category-head{
     width: 100%;
@@ -15,10 +16,72 @@
         color: rgb(105, 105, 105);
     }
 }
+.seeall{
+    width: 100%;
+    
+   display: flex;
+   justify-content: flex-end;
+    margin-right: 9px;
+   a{
+    color: black;
+    margin-bottom: 11px;
+    font-size: 93%;
+    margin-right: 5px;
+   }
+}
+.seemore{
+    padding-right: 5px;
+    padding-left: 5px;
+    justify-content: flex-end;
+    
+    height: 28px;
+    a{
+        margin-bottom:0 ;
+        align-self: center;    }
+    .sortby{
+        span{
+            font-size: 93%;
+        }
+        display: none;
+      padding: 5px 1rem;
+        border-radius: 20px;
+        background-color: #e6e0e0;
+        position: absolute;
+        left:2rem;
+        
+    
+        .sort-list{
+            height: 0;
+            overflow: hidden;
+            .sort-link{
+                padding: 3px 0;
+                font-size: 90%;
+            }
+           
+           
+           
+            transition: all 0.3s ease-in-out;
+        }
+        
+    }
+    .sortby.acti{
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px #808080,-2px 2px 8px #808080;
+        
+       
+        .sort-list{
+            height: 67px;
+            margin-top: 8px;
+            margin-left: 10px;
+
+        }
+    }
+}
 .category-body{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 11px;
     .cate-left{
         width: 20%;
         h4{
@@ -41,7 +104,8 @@
         }
         i{
             font-size: 95%;
-           margin: 8px 0 1rem;
+            margin: 8px 0 1rem;
+            cursor: pointer;
 
         }
         .sort{
@@ -54,10 +118,13 @@
             }
         }
     }
+    
     .cate-right{
         width: 80%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        
         .cate-card{
             width: 23%;
            
@@ -70,6 +137,18 @@
             }
             img{
                 width: 100%;
+            }
+        }
+        .cate-card1{
+            box-shadow: none;
+            h3{
+                font-size: 110%;
+                padding-left: 3px;
+            }
+            h4{
+                margin-top: .2rem;
+                font-size: 84%;
+                padding-left: 3px;
             }
         }
 
@@ -136,6 +215,11 @@
         }
         .cate-right{
             width: 100%;
+        }
+    }
+    .seemore{
+        .sortby{
+            display: block;
         }
     }
 }

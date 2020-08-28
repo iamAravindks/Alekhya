@@ -1,7 +1,7 @@
 .about{
     margin: 0 3rem;
     padding: 2rem 0;
-    border-bottom: 1px solid #929292;
+    border-bottom: 1px solid #5a5a5a;
     .abt-head{
         padding: 1rem 0;
         h2{
@@ -81,7 +81,7 @@
         .abt-body{
             flex-direction: column;
             .abt-left{
-                width:80%;
+                width:90%;
                 order:2;
                 .btn{
                     display: block;

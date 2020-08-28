@@ -24,3 +24,9 @@ var ultoggler = document.querySelector('.ul-toggler');
 ultoggler.addEventListener('click',function(){
     cateul.classList.toggle('activated');
 });
+
+
+var sortby = document.querySelector('.sortby');
+sortby.addEventListener('click',function(){
+    sortby.classList.toggle('acti');
+});
