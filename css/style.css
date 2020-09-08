@@ -547,6 +547,11 @@ section .bg-site .bg-siteimg {
           justify-content: space-between;
   position: relative;
   left: 0;
+  scrollbar-width: none;
+}
+
+.art .cate .cate-body .cate-cards .cards::-webkit-scrollbar {
+  display: none;
 }
 
 .art .cate .cate-body .cate-cards .cards .card {
