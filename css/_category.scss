@@ -32,9 +32,6 @@
                 overflow-x: scroll;
                 justify-content: space-between;
                 position: relative;
-                &::-webkit-scrollbar{
-                    display: none;
-                }
                 left: 0;
                 .card{
                         max-width: 230px;

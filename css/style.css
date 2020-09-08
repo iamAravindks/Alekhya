@@ -549,10 +549,6 @@ section .bg-site .bg-siteimg {
   left: 0;
 }
 
-.art .cate .cate-body .cate-cards .cards::-webkit-scrollbar {
-  display: none;
-}
-
 .art .cate .cate-body .cate-cards .cards .card {
   max-width: 230px;
   min-width: 142px;
