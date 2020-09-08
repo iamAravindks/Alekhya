@@ -541,17 +541,11 @@ section .bg-site .bg-siteimg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
   left: 0;
-  scrollbar-width: none;
-}
-
-.art .cate .cate-body .cate-cards .cards::-webkit-scrollbar {
-  display: none;
 }
 
 .art .cate .cate-body .cate-cards .cards .card {
@@ -577,6 +571,13 @@ section .bg-site .bg-siteimg {
 @media (max-width: 894px) {
   .art {
     margin: 1rem 1rem;
+  }
+  .art .cate .cate-body .cate-cards .cards {
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .art .cate .cate-body .cate-cards .cards::-webkit-scrollbar {
+    display: none;
   }
   .art .cate .cate-body .cate-cards .cards .card {
     min-width: 23%;

@@ -29,14 +29,11 @@
                 .cards{
                 padding-left: 10px;
                 display: flex;
-                overflow-x: scroll;
+               
                 justify-content: space-between;
                 position: relative;
                 left: 0;
-                &::-webkit-scrollbar{
-                    display: none;
-                }
-                scrollbar-width: none;
+               
                 .card{
                         max-width: 230px;
                         min-width: 142px;
@@ -69,6 +66,11 @@
             .cate-body{
                 .cate-cards{
                     .cards{
+                        overflow-x: scroll;
+                        &::-webkit-scrollbar{
+                            display: none;
+                        }
+                        scrollbar-width: none;
                         .card{
                             min-width:23%;
                             margin: 1rem 1.5% 1rem 0;
