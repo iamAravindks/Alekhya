@@ -22,17 +22,21 @@
         .cate-body{
             .cate-cards{
                 margin-right: 10px;
-                overflow-x: hidden;
-                .cards{
-                    padding-left: 10px;
                 
+               
+               
+
+                .cards{
+                padding-left: 10px;
                 display: flex;
+                overflow-x: scroll;
                 justify-content: space-between;
                 position: relative;
-                
+                &::-webkit-scrollbar{
+                    display: none;
+                }
                 left: 0;
-                
-                    .card{
+                .card{
                         max-width: 230px;
                         min-width: 142px;
                         border-radius: 10px;
@@ -46,6 +50,7 @@
                         }
                     }
                 }
+               
             }
         }
      

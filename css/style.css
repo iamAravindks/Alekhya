@@ -534,7 +534,6 @@ section .bg-site .bg-siteimg {
 
 .art .cate .cate-body .cate-cards {
   margin-right: 10px;
-  overflow-x: hidden;
 }
 
 .art .cate .cate-body .cate-cards .cards {
@@ -542,11 +541,16 @@ section .bg-site .bg-siteimg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-x: scroll;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
   left: 0;
+}
+
+.art .cate .cate-body .cate-cards .cards::-webkit-scrollbar {
+  display: none;
 }
 
 .art .cate .cate-body .cate-cards .cards .card {
