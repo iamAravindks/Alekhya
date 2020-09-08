@@ -1,6 +1,8 @@
 .art{
     margin: 1rem 3rem;
     .cate{
+        padding: 1.5rem 0 2.5rem;
+        border-bottom: 1px solid #838383c0;
         .cate-head{
             padding:0 10px;
             h2{
@@ -50,15 +52,66 @@
                 }
                
             }
+        
         }
      
         
+    }
+    .works{
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        .works-head{
+            padding:0 10px;
+            h2{
+                font-size:162%;
+                font-weight:100;
+                margin-bottom:.4rem;
+            }
+            p{
+                color: #3d3d3d;
+            }
+
+        }
+        .work-body{
+            display: flex;
+            margin-top: 1rem;
+            padding: 0 10px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .work-card{
+                width: 19%;
+                margin-bottom: 1rem;
+                img{
+                    border-radius: 0px;
+                }
+                h4{
+                    font-weight: 100;
+                    font-size: 130%;
+                    padding-left: 3px;
+                }
+                p{
+                    font-size: 93%;
+                    padding-left: 3px;
+                }
+            }
+        }
     }
     img{
         width: 100%;
         border-radius:5px ;
     }
-}                
+}  
+@media(max-width:1024px){
+    .art{
+        .works{
+            .work-body{
+                .work-card{
+                    width:24%;
+                }
+            }
+        }
+    }
+}              
 @media(max-width:894px){
     .art{
         margin: 1rem 1rem;
@@ -97,6 +150,13 @@
                 }
             }
         }
+        .works{
+            .work-body{
+                .work-card{
+                    width:31%;
+                }
+            }
+        } 
     }
 }    
 @media(max-width:512px){
@@ -114,5 +174,12 @@
                 }
             }
         }
+        .works{
+            .work-body{
+                .work-card{
+                    width:48%;
+                }
+            }
+        } 
     }
 }                       
