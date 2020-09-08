@@ -4,10 +4,18 @@
     border-bottom: 1px solid #838383c0;
     .abt-head{
         padding: 1rem 0;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: ease-in-out all 0.8s;
         h2{
             text-align: center;
             font-size: 200%;
         }
+    }
+    .abt-head.abtheadonload{
+        transform: translateY(0);
+        opacity: 1;
+
     }
     .abt-body{
         display: flex;
@@ -17,6 +25,9 @@
         .abt-left{
             width: 50%;
             align-self: center;
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all .8s ease-in-out;
             p{
                 line-height: 26px;
             }
@@ -25,13 +36,27 @@
                 border: none;
                 outline: none;
                 margin-top: 1rem;
+                transform: translateY(50px);
+                transition: all ease-in-out 0.6s;
+                opacity:0;
                 border-radius: 50px;
                 background-color:rgba(252, 225, 106, 0.856) ;
             }
+            .btn.onscroll{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .abt-left.abttxtonload{
+            opacity: 1;
+            transform: translateY(0);
         }
         .abt-right{
             width: 40%;
             justify-self: center;
+            transform: translateY(80%);
+            opacity: 0;
+            transition: ease-in-out 0.8s all;
             img{
                 max-width: 80%;
                 display: block;
@@ -41,6 +66,11 @@
               
             }
         }
+        .abt-right.abtonload{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
     }
     
     

@@ -1,10 +1,13 @@
 .art{
     margin: 1rem 3rem;
     .cate{
-        padding: 1.5rem 0 2.5rem;
+        padding: 0 0 2.5rem;
         border-bottom: 1px solid #838383c0;
         .cate-head{
-            padding:0 10px;
+            padding-right: 10px;
+            transform: translateY(60px);
+            opacity: 0;
+            transition: all ease-in-out .5s;
             h2{
                 font-size:162%;
                 font-weight:100;
@@ -21,6 +24,10 @@
                 }
             }
         }
+        .cate-head.scrollon{
+            opacity: 1;
+            transform: translateY(0);
+        }
         .cate-body{
             .cate-cards{
                 margin-right: 10px;
@@ -35,6 +42,9 @@
                 justify-content: space-between;
                 position: relative;
                 left: 0;
+                opacity: 0;
+                transform: translateX(70px);
+                transition: all ease-in-out .8s;
                
                 .card{
                         max-width: 230px;
@@ -50,11 +60,15 @@
                         }
                     }
                 }
+                .cards.scrollleft{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
                
             }
         
         }
-     
+    
         
     }
     .works{
@@ -62,6 +76,9 @@
         margin-top: 1rem;
         .works-head{
             padding:0 10px;
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all ease-in-out .8s;
             h2{
                 font-size:162%;
                 font-weight:100;
@@ -72,6 +89,10 @@
             }
 
         }
+        .works-head.scrolling{
+            opacity: 1;
+            transform: translateY(0);
+        }
         .work-body{
             display: flex;
             margin-top: 1rem;
@@ -79,6 +100,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
             .work-card{
+                opacity: 0;
+                transform: translateY(60px);
+                transition: all ease-in-out .8s;
                 width: 19%;
                 margin-bottom: 1rem;
                 img{
@@ -93,6 +117,10 @@
                     font-size: 93%;
                     padding-left: 3px;
                 }
+            }
+            .work-card.scrollcard{
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     }
@@ -138,12 +166,13 @@
 @media(max-width:764px){
     .art{
         .cate{
+            padding: 1rem 0 2rem;
             .cate-body{
                 .cate-cards{
                    .cards{
                     .card{
                         min-width:31%;
-                        margin: 1rem 2% 1rem 0;
+                        margin: 1.5rem 4% 1rem 0;
                        
                     }
                    }
@@ -166,7 +195,7 @@
                 .cate-cards{
                    .cards{
                     .card{
-                        min-width:47%;
+                        min-width:92%;
                         
                        
                     }
