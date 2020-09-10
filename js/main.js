@@ -35,7 +35,7 @@ function scrollabt(){
 window.addEventListener('load',scrollabt);
 
 function scrollAppear(){
-    var btn = document.getElementsByClassName('btn')[0];
+    var btn = document.getElementsByClassName('btn')[1];
     var height = btn.getBoundingClientRect().top;
     var screenpos = window.innerHeight/1.3;
 
