@@ -1,8 +1,17 @@
 var navbar = document.querySelector('.navbar');
-var toggleIcon = document.querySelector('.toggle-collapse');
+var toggleIcon = document.querySelector('.hamburger');
+const line = document.querySelectorAll(".line")
+const links = document.querySelectorAll(".nav-item li a");
+
 //hamburger menu
 toggleIcon.addEventListener('click', function () {
     navbar.classList.toggle('nav-collapse');
+    line.forEach(lines => {
+        lines.classList.toggle("close")
+    })
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
 });
 
 bgSite = document.querySelector('.bg-site');

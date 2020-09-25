@@ -50,20 +50,12 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-.navbar .toggle-collapse {
+.hamburger {
   position: absolute;
-  right: 3rem;
-  margin-top: 15px;
-  border: 1px solid #e0e0e0;
-  padding: 0.18rem 0.3rem;
-  border-radius: 4px;
-  display: none;
-}
-
-.navbar .toggle-collapse .toggle-icon {
-  font-size: 150%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  right: 5%;
+  transform: translate(-5%, 60%);
+  z-index: 2;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -158,18 +150,11 @@ section .bg-site::before {
   background-image: linear-gradient(to top, #fff, transparent);
 }
 
-.navbar.nav-collapse {
-  height: 290px !important;
-}
-
-.navbar.nav-collapse .navbar-nav {
-  border-top: 0.01rem solid #c2c4b6;
-}
-
 .navbar.nav-scroll {
   -webkit-box-shadow: 0px 9px 16px #1b1a1a;
   box-shadow: 0px 9px 16px #1b1a1a;
   height: 60px;
+  transition: all 0.8s ease-in-out;
   background-color: #ffffff;
 }
 
@@ -182,8 +167,44 @@ section .bg-site::before {
 }
 
 @media (max-width: 912px) {
+  .navbar {
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0px 9px 16px #1b1a1a;
+  }
+
+  li a {
+    animation: animate 0.8s backwards;
+    pointer-events: none;
+  }
+
+  li a.fade {
+    pointer-events: all;
+    animation: animate 0.8s forwards;
+  }
   .navbar .navbar-nav .nav-item .nav-link {
     padding: 0 1.7rem;
+  }
+  .navbar.nav-collapse {
+    transition: all 0.8s ease-in-out;
+    height: 290px !important;
+  }
+
+  .navbar.nav-collapse .navbar-nav {
+    border-top: 0.01rem solid #c2c4b6;
+  }
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -194,6 +215,27 @@ section .bg-site::before {
 }
 
 @media (max-width: 753px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+    transition: all 1s ease-in-out;
+  }
+
+  .line.close:nth-child(1) {
+    transform: rotate(45deg) translate(12px);
+    transition: all 0.5s ease-in-out;
+  }
+  .line.close:nth-child(2) {
+    background: transparent;
+    box-shadow: none;
+    transition: all 0.1s ease-in-out;
+  }
+  .line.close:nth-child(3) {
+    transform: rotate(-45deg) translate(10px);
+    transition: all 0.5s ease-in-out;
+  }
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
